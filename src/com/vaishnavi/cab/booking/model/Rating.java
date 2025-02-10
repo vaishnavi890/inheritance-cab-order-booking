@@ -1,13 +1,14 @@
 package com.vaishnavi.cab.booking.model;
 
 public class Rating {
-    private final int ratingId;
-    private final int rideId;
-    private final int userId;
-    private final int driverId;
-    private final int rating;
-    private final String review;
+    private int ratingId;
+    private int rideId;
+    private int userId;
+    private int driverId;
+    private int rating;
+    private String review;
 
+    // Constructor, Getters, and Setters
     public Rating(int ratingId, int rideId, int userId, int driverId, int rating, String review) {
         this.ratingId = ratingId;
         this.rideId = rideId;
@@ -17,17 +18,32 @@ public class Rating {
         this.review = review;
     }
 
-    public void displayRating() {
-        System.out.println("Rating ID: " + ratingId + ", Ride: " + rideId + ", User: " + userId +
-                ", Driver: " + driverId + ", Rating: " + rating + ", Review: " + review);
-    }
-
+    // Getters and Setters
+    public int getRatingId() {
+        return ratingId; }
+    public void setRatingId(int ratingId) {
+        this.ratingId = ratingId; }
+    public int getRideId() {
+        return rideId; }
+    public void setRideId(int rideId) {
+        this.rideId = rideId; }
+    public int getUserId() {
+        return userId; }
+    public void setUserId(int userId) {
+        this.userId = userId; }
+    public int getDriverId() {
+        return driverId; }
+    public void setDriverId(int driverId) {
+        this.driverId = driverId; }
     public int getRating() {
-        return 0;
-    }
+        return rating; }
+    public void setRating(int rating) {
+        this.rating = rating; }
+    public String getReview() {
+        return review; }
+    public void setReview(String review) {
+        this.review = review; }
 
-    public Integer getRatingId() {
-        return 0;
+    public void displayRating() {
     }
 }
-

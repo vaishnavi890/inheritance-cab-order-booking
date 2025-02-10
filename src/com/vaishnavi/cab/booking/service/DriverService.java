@@ -4,20 +4,32 @@ import com.vaishnavi.cab.booking.model.Driver;
 import com.vaishnavi.cab.booking.repository.DriverRepository;
 
 
-public class DriverService {
-    private final DriverRepository driverRepository = new DriverRepository();
+public class DriverService extends BaseService{
+    @Override
+    public void add() {
+        System.out.println("Driver added.");
+    }
 
-    public void registerDriver(Driver driver) {
-        if (driverRepository.getDriverById(driver.getId()) == null) {
-            driverRepository.saveDriver(driver);
-            System.out.println("Driver " + driver.getName() + " registered successfully.");
-        } else {
-            System.out.println("Driver with ID " + driver.getId() + " already exists.");
-        }
+    @Override
+    public void update() {
+        System.out.println("Driver updated.");
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("Driver deleted.");
+    }
+
+    @Override
+    public void view() {
+        System.out.println("Driver details viewed.");
+    }
+
+    public void registerDriver(Driver newDriver) {
     }
 
     public Driver getDriverById(int driverId) {
-        return driverRepository.getDriverById(driverId);
+        return null;
     }
 }
 

@@ -5,7 +5,7 @@ import com.vaishnavi.cab.booking.service.UserService;
 
 
 public class UserController {
-    private UserService userService = new UserService();
+    private final UserService userService = new UserService();
 
     public void registerUser(int id, String name, String email, String phone) {
         User user = new User(id, name, email, phone);

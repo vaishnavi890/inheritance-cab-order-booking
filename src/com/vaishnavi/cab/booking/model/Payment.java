@@ -1,13 +1,14 @@
 package com.vaishnavi.cab.booking.model;
 
 public class Payment {
-    private final int paymentId;
-    private final int rideId;
+    private int paymentId;
+    private int rideId;
     private int userId;
-    private final double amount;
-    private final String paymentMethod;
-    private final String status;
+    private double amount;
+    private String paymentMethod;
+    private String status;
 
+    // Constructor, Getters, and Setters
     public Payment(int paymentId, int rideId, int userId, double amount, String paymentMethod, String status) {
         this.paymentId = paymentId;
         this.rideId = rideId;
@@ -17,16 +18,33 @@ public class Payment {
         this.status = status;
     }
 
+    // Getters and Setters
+    public int getPaymentId() {
+        return paymentId; }
+    public void setPaymentId(int paymentId) {
+        this.paymentId = paymentId; }
+    public int getRideId() {
+        return rideId; }
+    public void setRideId(int rideId) {
+        this.rideId = rideId; }
+    public int getUserId() {
+        return userId; }
+    public void setUserId(int userId) {
+        this.userId = userId; }
+    public double getAmount() {
+        return amount; }
+    public void setAmount(double amount) {
+        this.amount = amount; }
+    public String getPaymentMethod() {
+        return paymentMethod; }
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod; }
+    public String getStatus() {
+        return status; }
+    public void setStatus(String status) {
+        this.status = status; }
+
     public void displayPaymentDetails() {
-        System.out.println("Payment ID: " + paymentId + ", Ride ID: " + rideId + ", Amount: " + amount + ", Method: " + paymentMethod + ", Status: " + status);
-    }
-
-    public int getAmount() {
-        return 0;
-    }
-
-    public Integer getPaymentId() {
-        return 0;
     }
 }
 

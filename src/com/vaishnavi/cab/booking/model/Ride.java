@@ -1,14 +1,15 @@
 package com.vaishnavi.cab.booking.model;
 
 public class Ride {
-    private final int rideId;
-    private final int userId;
-    private final int driverId;
-    private final String pickupLocation;
-    private final String dropoffLocation;
-    private final double fare;
-    private final String status;
+    private int rideId;
+    private int userId;
+    private int driverId;
+    private String pickupLocation;
+    private String dropoffLocation;
+    private double fare;
+    private String status;
 
+    // Constructor, Getters, and Setters
     public Ride(int rideId, int userId, int driverId, String pickupLocation, String dropoffLocation, double fare, String status) {
         this.rideId = rideId;
         this.userId = userId;
@@ -19,13 +20,36 @@ public class Ride {
         this.status = status;
     }
 
-    public void displayRideDetails() {
-        System.out.println("Ride ID: " + rideId + ", User: " + userId + ", Driver: " + driverId +
-                ", Pickup: " + pickupLocation + ", Dropoff: " + dropoffLocation + ", Fare: " + fare + ", Status: " + status);
-    }
-
+    // Getters and Setters
     public int getRideId() {
-        return 0;
+        return rideId; }
+    public void setRideId(int rideId) {
+        this.rideId = rideId; }
+    public int getUserId() {
+        return userId; }
+    public void setUserId(int userId) {
+        this.userId = userId; }
+    public int getDriverId() {
+        return driverId; }
+    public void setDriverId(int driverId) {
+        this.driverId = driverId; }
+    public String getPickupLocation() {
+        return pickupLocation; }
+    public void setPickupLocation(String pickupLocation) {
+        this.pickupLocation = pickupLocation; }
+    public String getDropoffLocation() {
+        return dropoffLocation; }
+    public void setDropoffLocation(String dropoffLocation) {
+        this.dropoffLocation = dropoffLocation; }
+    public double getFare() {
+        return fare; }
+    public void setFare(double fare) {
+        this.fare = fare; }
+    public String getStatus() {
+        return status; }
+    public void setStatus(String status) {
+        this.status = status; }
+
+    public void displayRideDetails() {
     }
 }
-
